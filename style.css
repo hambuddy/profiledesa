@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+.box {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.iframe-rwd iframe {
+    width: 100%;
+    height: 400px;
+}
+
+section.home .card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    padding: 20px;
+}
+
+section.home .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+section.home .card hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+section.home .card a.card-link {
+    border: 2px solid #333;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+section.home .card a.card-link:hover {
+    background: white;
+    color: #333;
+}
+
+section.home .card a.card-link:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+
+section.home .card a.card-link:hover:before {
+    width: 100%;
+}
+
+section.home .card a.card-link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+footer {
+        background-color: #b4b4b4;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        color: rgb(255, 255, 255);
+    }
+
+section.home .card a.card-link:hover:after {
+    width: 100%;
+}
+
+.home {
+    padding-top: 100px; /* Adjust this value as needed to prevent the heading from being covered */
+}
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
